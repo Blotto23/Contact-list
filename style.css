@@ -1,0 +1,81 @@
+*,
+::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(47, 45, 45);
+    color: whitesmoke;
+}
+
+.contenedor {
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+}
+
+.contenedor h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.formulario {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario input {
+    margin: 1rem 0rem;
+    line-height: 2rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: aliceblue;
+}
+
+.formulario input:focus {
+    border-bottom: 1px solid rgb(177, 236, 41);
+}
+
+.formulario button {
+    margin: 1px 0rem;
+    background-color: rgb(191, 191, 55);
+    border: 0;
+    outline: o;
+    height: 3rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.lista-tareas {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.tareas {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.tareas i {
+    color: tomato;
+    cursor: pointer;
+}
