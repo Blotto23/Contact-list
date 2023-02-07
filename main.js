@@ -1,6 +1,7 @@
 const nombre = document.querySelector('.nombre')
 const telefono = document.querySelector('.telefono')
 const direccion = document.querySelector('.direccion')
+const ciudad = document.querySelector('.ciudad')
 const agregar = document.querySelector('.btn-add')
 
 const listaTareas = document.querySelector('.lista-tareas')
@@ -13,6 +14,7 @@ agregar.onclick = () => {
         nombre: nombre.value,
         telefono: telefono.value,
         direccion: direccion.value,
+        ciudad: ciudad.value,
     }
     guardarContacto(localData, contacto)
 }

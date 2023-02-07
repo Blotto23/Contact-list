@@ -19,11 +19,13 @@ const crearContacto = (parentNode, contacto, localData) => {
     let nombreContacto = document.createElement('h3')
     let telefonoContacto = document.createElement('p')
     let direccionContacto = document.createElement('p')
+    let ciudadContacto = document.createElement('p')
     let iconoBorrar = document.createElement('i')
 
     nombreContacto.innerHTML = contacto.nombre
     telefonoContacto.innerHTML = contacto.telefono
     direccionContacto.innerHTML = contacto.direccion
+    ciudadContacto.innerHTML = contacto.ciudad
     iconoBorrar.innerHTML = ''
 
     divContacto.classList.add('tareas')
@@ -37,10 +39,9 @@ const crearContacto = (parentNode, contacto, localData) => {
     divContacto.appendChild(nombreContacto)
     divContacto.appendChild(telefonoContacto)
     divContacto.appendChild(direccionContacto)
+    divContacto.appendChild(ciudadContacto)
     divContacto.appendChild(iconoBorrar)
 
     parentNode.appendChild(divContacto)
-
-
 
 }
