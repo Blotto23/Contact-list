@@ -79,3 +79,7 @@ body {
     color: tomato;
     cursor: pointer;
 }
+
+.icono-edit {
+    color: yellow;
+}
